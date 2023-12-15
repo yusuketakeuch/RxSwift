@@ -45,12 +45,11 @@ let package = Package(
   platforms: [.iOS(.v9), .macOS(.v10_10), .watchOS(.v3), .tvOS(.v9)],
   products: ([
     [
-      .library(name: "RxSwift", targets: ["RxSwift"]),
+      .library(name: "RxSwift", type: .dynamic, targets: ["RxSwift"]),
       .library(name: "RxCocoa", targets: ["RxCocoa"]),
       .library(name: "RxRelay", targets: ["RxRelay"]),
       .library(name: "RxBlocking", targets: ["RxBlocking"]),
       .library(name: "RxTest", targets: ["RxTest"]),
-      .library(name: "RxSwift-Dynamic", type: .dynamic, targets: ["RxSwift"]),
       .library(name: "RxCocoa-Dynamic", type: .dynamic, targets: ["RxCocoa"]),
       .library(name: "RxRelay-Dynamic", type: .dynamic, targets: ["RxRelay"]),
       .library(name: "RxBlocking-Dynamic", type: .dynamic, targets: ["RxBlocking"]),
